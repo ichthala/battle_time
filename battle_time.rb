@@ -30,8 +30,7 @@ def charm_effect(cha, luck)
   if damage < 50
     puts "Your charm failed! Buy cuter clothes!"
   else
-    puts "Your charm succeeded!
-    Your opponent prostrates himself before you!"
+    puts "Your charm succeeded!\nYour opponent prostrates himself before you!"
   end
 end
 
@@ -58,8 +57,7 @@ def poison(wis, luck)
   if damage == 0
     puts "Your poison spell failed!"
   else
-    puts "Your poison succeeded!
-    The challenger loses #{damage} HP each turn!"
+    puts "Your poison succeeded!\nThe challenger loses #{damage} HP each turn!"
   end
 end
 
@@ -165,6 +163,14 @@ while true
   else break
   end
 end
+
+puts ""
+print "."
+sleep(0.5)
+print " ."
+sleep(0.5)
+puts " ."
+sleep(0.5)
 
 puts "Got it. What type of attack would you like to use?"
 puts "Options: "
