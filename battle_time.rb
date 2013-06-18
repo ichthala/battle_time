@@ -82,26 +82,89 @@ puts " ."
 sleep(0.5)
 puts "Time to set your stats. All stats must be between 1 and 10."
 
-puts "Strength: "
-str = gets.chomp.to_i
+while true
+  puts "Strength: "
+  str = gets.chomp.to_i
+  if str < 1 || str > 10
+    puts "Enter a number between 1 and 10."
+  elsif str > 8
+    puts "Look at those muscles!"
+    break
+  else break
+  end
+end
 
-puts "Intelligence: "
-int = gets.chomp.to_i
+while true
+  puts "Intelligence: "
+  int = gets.chomp.to_i
+  if int < 1 || int > 10
+    puts "Enter a number between 1 and 10."
+  elsif int > 8
+    puts "You're a smarty-pants!"
+    break
+  else break
+  end
+end
 
-puts "Charisma: "
-cha = gets.chomp.to_i
+while true
+  puts "Charisma: "
+  cha = gets.chomp.to_i
+  if cha < 1 || cha > 10
+    puts "Enter a number between 1 and 10."
+  elsif cha > 8
+    puts "I'm in love! *swoon*"
+    break
+  else break
+  end
+end
 
-puts "Dexterity: "
-dex = gets.chomp.to_i
+while true
+  puts "Dexterity: "
+  dex = gets.chomp.to_i
+  if dex < 1 || dex > 10
+    puts "Enter a number between 1 and 10."
+  elsif dex > 8
+    puts "You're a slippery thing, aren't you?"
+    break
+  else break
+  end
+end
 
-puts "Wisdom: "
-wis = gets.chomp.to_i
+while true
+  puts "Wisdom: "
+  wis = gets.chomp.to_i
+  if wis < 1 || wis > 10
+    puts "Enter a number between 1 and 10."
+  elsif wis > 8
+    puts "I can see you have experience..."
+    break
+  else break
+  end
+end
 
-puts "Accuracy: "
-acc = gets.chomp.to_i
+while true
+  puts "Accuracy: "
+  acc = gets.chomp.to_i
+  if acc < 1 || acc > 10
+    puts "Enter a number between 1 and 10."
+  elsif acc > 8
+    puts "Who doesn't love a skilled marksman?"
+    break
+  else break
+  end
+end
 
-puts "Luck: "
-luck = gets.chomp.to_i
+while true
+  puts "Luck: "
+  luck = gets.chomp.to_i
+  if luck < 1 || luck > 10
+    puts "Enter a number between 1 and 10."
+  elsif luck > 8
+    puts "Lucky duck!"
+    break
+  else break
+  end
+end
 
 puts "Got it. What type of attack would you like to use?"
 puts "Options: "
@@ -113,7 +176,14 @@ puts "5 - Steal"
 puts "6 - Bow"
 puts "7 - Poison"
 puts "8 - Run Away!"
-attack = gets.chomp.to_i
+
+while true
+  attack = gets.chomp.to_i
+  if attack < 1 || attack > 8
+    puts "Enter a value between 1 and 8."
+  else break
+  end
+end
 
 case attack
 when 1
