@@ -1,3 +1,7 @@
+# Functions to determine attack damage
+# Attack damage is dependent on stats
+# All attacks depend partially on luck
+
 def sword_damage(str, dex, luck)
   damage = (str + dex)/2 * rand(luck)
   if damage == 0
@@ -70,6 +74,10 @@ def escape(dex, luck)
   end
 end
 
+######################
+# Program start
+######################
+
 print "A challenger appears!"
 sleep(0.5)
 print " ."
@@ -79,6 +87,9 @@ sleep(0.5)
 puts " ."
 sleep(0.5)
 puts "Time to set your stats. All stats must be between 1 and 10."
+
+# Asks user to input stats
+# Checks for input validity
 
 while true
   puts "Strength: "
