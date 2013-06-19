@@ -12,7 +12,7 @@ def sword_damage(str, dex, luck)
 end
 
 def warhammer_damage(str, luck)
-  damage = str * rand(luck)
+  damage = str * rand(luck + 1)
   if damage == 0
     puts "You missed!"
   else
@@ -21,7 +21,7 @@ def warhammer_damage(str, luck)
 end
 
 def spell_damage(int, luck)
-  damage = int * rand(luck)
+  damage = int * rand(luck + 1)
   if damage == 0
     puts "Your spell failed! Study harder!"
   else
@@ -30,7 +30,7 @@ def spell_damage(int, luck)
 end
 
 def charm_effect(cha, luck)
-  damage = cha * rand(luck)
+  damage = cha * rand(luck + 1)
   if damage < 50
     puts "Your charm failed! Buy cuter clothes!"
   else
@@ -39,7 +39,7 @@ def charm_effect(cha, luck)
 end
 
 def steal(dex, cha, luck)
-  damage = (dex + cha)/2 * rand(luck)
+  damage = (dex + cha)/2 * rand(luck + 1)
   if damage < 50
     puts "Your stealing attempt failed!"
   else
@@ -48,7 +48,7 @@ def steal(dex, cha, luck)
 end
 
 def bow_damage(acc, luck)
-  damage = acc * rand(luck)
+  damage = acc * rand(luck + 1)
   if damage == 0
     puts "You missed!"
   else
@@ -57,7 +57,7 @@ def bow_damage(acc, luck)
 end
 
 def poison(wis, luck)
-  damage = (wis * rand(luck)) / 4
+  damage = (wis * rand(luck + 1)) / 4
   if damage == 0
     puts "Your poison spell failed!"
   else
@@ -66,7 +66,7 @@ def poison(wis, luck)
 end
 
 def escape(dex, luck)
-  damage = dex * rand(luck)
+  damage = dex * rand(luck + 1)
   if damage < 50
     puts "You were caught and pulled back into the fray!"
   else
