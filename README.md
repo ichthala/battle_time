@@ -1,7 +1,7 @@
 battle_time
 ===========
 
-The assignment was to write a program that perform one of 8 or more pre-set calculations, with the operation and parameters chosen by the user.
+The assignment was to write a program that performs one of 8 or more pre-set calculations, with the operation and parameters chosen by the user.
 
 This short script is an RPG-inspired battle turn that lets the user select character stats and execute one battle attack. Based on the selected stats and attack, the program calculates the damage the user does to his opponent (if his attack succeeds at all!).
 
