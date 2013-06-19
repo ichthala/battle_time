@@ -8,3 +8,5 @@ The damage done by your attack can be anywhere from 0 to 100. Damage is based on
 Some attacks have a binary outcome (success or failure). In these cases, the outcome is determined by comparing the damage value to 50. 50 or greater damage leads to a successful attack.
 
 Next steps: adding a limit to total skill points; turning it into a full battle; adding an option to heal damage.
+
+It also may be worth considering whether the damage is too greatly dependent on the Luck stat.
